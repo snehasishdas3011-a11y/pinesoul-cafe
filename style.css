@@ -58,3 +58,5 @@
 .contact-card-copy{padding-top:2px}.contact-card-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:.14em;color:#b27758}.contact-card-copy h3{font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:32px;line-height:1;margin:12px 0 12px}.contact-card-copy h3 b{font-family:Manrope,Arial,sans-serif;font-size:15px;font-weight:400;color:#7a8c84;vertical-align:middle;margin-left:5px}.contact-card-copy p{margin:0;color:#66766f;font-size:13px;line-height:1.7;max-width:390px}.contact-address-line{margin-top:28px;padding-top:16px;border-top:1px solid rgba(23,60,49,.13);display:flex;justify-content:space-between;gap:20px;color:#87928d;font-family:"DM Mono",monospace;font-size:8px;letter-spacing:.12em}
 @media(max-width:800px){.brand-name{display:inline;font-size:17px}.contact-cards{grid-template-columns:1fr}.contact-address-line{flex-direction:column;gap:7px}.hero-name{font-size:1.06em}}
 @media(max-width:520px){.brand-name{font-size:16px}.brand-name small{font-size:7px}.contact-card{padding:23px;min-height:0}.contact-card-copy h3{font-size:29px}.contact-intro{margin-bottom:32px}}
+
+.email-kicker a{font-size:18px;letter-spacing:.08em}
