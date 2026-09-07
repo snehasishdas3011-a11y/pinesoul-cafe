@@ -259,3 +259,28 @@
     letter-spacing:.055em;
   }
 }
+
+/* --- Website credit --- */
+.footer-inner{
+  position:relative;
+}
+
+.footer-inner:after{
+  content:"WEBSITE BY WEBVANTA";
+  position:absolute;
+  right:0;
+  bottom:-22px;
+  font-family:"DM Mono",monospace;
+  font-size:8px;
+  letter-spacing:.14em;
+  color:#8fa39b;
+}
+
+@media(max-width:520px){
+  .footer-inner:after{
+    position:static;
+    display:block;
+    margin-top:2px;
+    font-size:8px;
+  }
+}
