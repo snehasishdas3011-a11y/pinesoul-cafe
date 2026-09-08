@@ -3,11 +3,31 @@ const RESERVATION_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbzvwpPtKTnhRzhqyrh_XajZ4F8TutW1C2AT0HRO3BX6rXwETGRhTHiT3s779dM3Cm_B/exec";
 
 const menu = [
-  {name:"Pinesoul Special", category:"Specials", price:"Ask", description:"A house favourite from the Pinesoul kitchen."},
-  {name:"Chicken Sizzler", category:"Sizzlers", price:"Ask", description:"A hot, comforting sizzler served fresh."},
-  {name:"Paneer Tikka", category:"Starters", price:"Ask", description:"Tender paneer with warm spices and a smoky finish."},
-  {name:"Thai Curry", category:"Thai", price:"Ask", description:"A fragrant Thai-inspired curry for a cosy meal."},
-  {name:"Indian Main Course", category:"Indian Main Course", price:"Ask", description:"Comforting Indian favourites made for sharing."}
+  {
+    name: "Pinesoul Special Chicken",
+    category: "Indian Main Course",
+    type: "Non-Vegetarian"
+  },
+  {
+    name: "Pinesoul Special Biryani",
+    category: "Indian Main Course",
+    type: "Non-Vegetarian"
+  },
+  {
+    name: "Grilled Chicken Sizzler",
+    category: "Sizzlers",
+    type: "Non-Vegetarian"
+  },
+  {
+    name: "Thai Mixed Non-Veg Platter",
+    category: "Thai",
+    type: "Non-Vegetarian"
+  },
+  {
+    name: "Dragon Chicken",
+    category: "Starters",
+    type: "Non-Vegetarian"
+  }
 ];
 
 const photos = [
