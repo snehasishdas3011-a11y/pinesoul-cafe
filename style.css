@@ -284,3 +284,287 @@
     font-size:8px;
   }
 }
+/* =========================================
+   NEW PINESOUL MENU DESIGN
+   ========================================= */
+
+.menu-section{
+  background:#f4efe5;
+}
+
+.menu-intro{
+  max-width:900px;
+}
+
+.menu-intro h2{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(58px,7vw,92px);
+  line-height:.9;
+  letter-spacing:-.055em;
+  font-weight:400;
+  margin:10px 0 25px;
+}
+
+.menu-intro h2 em{
+  font-style:italic;
+  font-weight:400;
+}
+
+.menu-description{
+  max-width:520px;
+  color:#50675e;
+  font-size:15px;
+  line-height:1.75;
+  margin:0;
+}
+
+.menu-filter-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  margin-top:45px;
+  padding-bottom:15px;
+  border-bottom:1px solid rgba(23,60,49,.18);
+}
+
+.menu-filter-row .filters{
+  margin:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+}
+
+.filter-button{
+  background:transparent;
+  border:1px solid #d2c7b7;
+  border-radius:999px;
+  padding:9px 15px;
+  color:#173c31;
+  font-family:"DM Mono",monospace;
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.filter-button:hover,
+.filter-button.active{
+  background:#356657;
+  border-color:#356657;
+  color:#f4efe5;
+}
+
+.menu-note{
+  margin:0;
+  color:#68766f;
+  font-size:11px;
+  white-space:nowrap;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  background:transparent;
+  border:0;
+  margin-top:54px;
+}
+
+.menu-item{
+  min-height:130px;
+  background:#f7f2e9;
+  border:1px solid #d5cbbb;
+  padding:24px 20px 18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  gap:0;
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    background .2s ease;
+}
+
+.menu-item:hover{
+  transform:translateY(-3px);
+  border-color:#9eaa9f;
+  background:#faf6ee;
+}
+
+.menu-item-category{
+  align-self:flex-start;
+  font-family:"DM Mono",monospace;
+  font-size:8px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#bd7656;
+  margin-bottom:18px;
+}
+
+.menu-item h3{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:21px;
+  line-height:1.15;
+  font-weight:400;
+  margin:0 0 15px;
+  color:#173c31;
+}
+
+.menu-item-type{
+  align-self:flex-start;
+  display:inline-block;
+  background:#f3e4df;
+  color:#b05f55;
+  padding:5px 7px;
+  font-family:"DM Mono",monospace;
+  font-size:7px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.order-card{
+  margin-top:48px;
+  padding:23px 27px;
+  background:#e6e0d4;
+  color:#173c31;
+  border-radius:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.order-card .mini-label{
+  color:#bd7656;
+  margin:0 0 7px;
+}
+
+.order-card p:last-child{
+  margin:0;
+  color:#587068;
+  font-size:13px;
+}
+
+.order-actions{
+  display:flex;
+  gap:10px;
+}
+
+.order-button{
+  min-width:190px;
+  padding:14px 18px;
+  border-radius:999px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-family:"DM Mono",monospace;
+  font-size:9px;
+  letter-spacing:.1em;
+  transition:.2s ease;
+}
+
+.order-button b{
+  font-family:Arial,sans-serif;
+  font-size:18px;
+  font-weight:400;
+}
+
+.swiggy{
+  background:#d98e62;
+  color:#173c31;
+}
+
+.zomato{
+  background:transparent;
+  color:#173c31;
+  border:1px solid #356657;
+}
+
+.order-button:hover{
+  transform:translateY(-2px);
+}
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+  .menu-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .menu-filter-row{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .menu-note{
+    white-space:normal;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:520px){
+
+  .menu-intro h2{
+    font-size:52px;
+    line-height:.92;
+  }
+
+  .menu-description{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+  .menu-filter-row{
+    margin-top:35px;
+    gap:18px;
+  }
+
+  .menu-filter-row .filters{
+    gap:6px;
+  }
+
+  .filter-button{
+    padding:9px 11px;
+    font-size:8px;
+  }
+
+  .menu-grid{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:35px;
+  }
+
+  .menu-item{
+    min-height:125px;
+    padding:22px 18px 17px;
+  }
+
+  .menu-item h3{
+    font-size:21px;
+  }
+
+  .order-card{
+    margin-top:35px;
+    padding:22px 18px;
+    gap:22px;
+  }
+
+  .order-actions{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .order-button{
+    width:100%;
+    min-width:0;
+  }
+
+}
